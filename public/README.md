@@ -1,0 +1,1 @@
+This folder is for optional local narration files such as `narration.mp3` or `voiceover.wav` generated externally. Keep free/local files here and reference them from `render-props.json` without requiring any paid service.
