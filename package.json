@@ -1,0 +1,24 @@
+{
+  "name": "rick-clips-video-studio",
+  "version": "1.0.0",
+  "private": false,
+  "description": "A free, local-first Remotion studio for animated vertical shorts.",
+  "scripts": {
+    "dev": "remotion studio src/index.tsx",
+    "typecheck": "tsc --noEmit",
+    "render": "remotion render src/index.tsx ShortsComposition out/shorts.mp4 --codec=h264 --pixel-format=yuv420p",
+    "render:preview": "remotion render src/index.tsx ShortsComposition out/preview.mp4 --scale=0.5 --codec=h264 --pixel-format=yuv420p"
+  },
+  "dependencies": {
+    "@remotion/cli": "^4.0.0",
+    "@remotion/media-utils": "^4.0.0",
+    "remotion": "^4.0.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.0",
+    "typescript": "^5.6.2"
+  }
+}
